@@ -13,3 +13,5 @@ While this repo is under construction, feel free to check out the [repo for the 
 2. [Intro to HANK: Fiscal Policy](https://shade-econ.github.io/nber-workshop-2025/lecture2_fiscalpolicy.pdf), Ludwig Straub. [[notebook w/figures]](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/lecture2_fiscal.ipynb)
 
 3. [Intro to the Sequence Space and Jacobians](https://shade-econ.github.io/nber-workshop-2025/lecture3_sequence_space.pdf), Matthew Rognlie.
+
+4. [Intro to HANK: Monetary Policy](https://shade-econ.github.io/nber-workshop-2025/lecture4_monetary.pdf), Adrien Auclert.
