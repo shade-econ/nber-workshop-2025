@@ -12,9 +12,11 @@ While this repo is under construction, feel free to check out the [repo for the 
 
 2. [Intro to HANK: Fiscal Policy](https://shade-econ.github.io/nber-workshop-2025/lecture2_fiscalpolicy.pdf), Ludwig Straub. [[notebook w/figures]](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/lecture2_fiscal.ipynb)
 
-3. [Intro to the Sequence Space and Jacobians](https://shade-econ.github.io/nber-workshop-2025/lecture3_sequence_space.pdf), Matthew Rognlie.
+3. [Intro to the Sequence Space and Jacobians](https://shade-econ.github.io/nber-workshop-2025/lecture3_sequence_space.pdf), Matthew Rognlie. [[notebook w/figures]](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/lecture3_sequence_space.ipynb).
 
-4. [Intro to HANK: Monetary Policy](https://shade-econ.github.io/nber-workshop-2025/lecture4_monetary.pdf), Adrien Auclert.
+   * See end of notebook for hands-on implementation of fake news algorithm, which is generalized in [`sim_fake_news.py`](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/sim_fake_news.py). Also see [note from a previous class](https://mrognlie.github.io/econ411-3/econ411_3_lecture7_supplement.pdf) explaining the algorithm.
 
-5. Tutorial 1: Intro to HANK: Version with blanks: [Notebook](https://github.com/shade-econ/nber-workshop-2025/blob/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20with%20blanks.ipynb) [HTML](https://raw.githack.com/shade-econ/nber-workshop-2025/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20with%20blanks.html
+5. [Intro to HANK: Monetary Policy](https://shade-econ.github.io/nber-workshop-2025/lecture4_monetary.pdf), Adrien Auclert.
+
+6. Tutorial 1: Intro to HANK: Version with blanks: [Notebook](https://github.com/shade-econ/nber-workshop-2025/blob/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20with%20blanks.ipynb) [HTML](https://raw.githack.com/shade-econ/nber-workshop-2025/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20with%20blanks.html
 ). Version without blanks: [Notebook](https://github.com/shade-econ/nber-workshop-2025/blob/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20no%20blanks.ipynb) [HTML](https://raw.githack.com/shade-econ/nber-workshop-2025/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20no%20blanks.html). Ludwig Straub.
