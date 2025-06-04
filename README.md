@@ -6,4 +6,4 @@ While this repo is under construction, feel free to check out the [repo for the 
 ## Lectures
 
 ### Wednesday, June 4
-1. [Review of the Standard Incomplete Markets Model](https://shade-econ.github.io/nber-workshop-2025/lecture1_sim.pdf), Matthew Rognlie. 
+1. [Review of the Standard Incomplete Markets Model](https://shade-econ.github.io/nber-workshop-2025/lecture1_sim.pdf), Matthew Rognlie. [[Notebook producing figures]](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/lecture1_sim.ipynb)
