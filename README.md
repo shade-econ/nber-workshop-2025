@@ -18,14 +18,18 @@ While this repo is under construction, feel free to check out the [repo for the 
 
 4. [Intro to HANK: Monetary Policy](https://shade-econ.github.io/nber-workshop-2025/lecture4_monetary.pdf), Adrien Auclert.
 
-5. Tutorial 1: Intro to HANK: Version with blanks: [Notebook](https://github.com/shade-econ/nber-workshop-2025/blob/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20with%20blanks.ipynb) [HTML](https://raw.githack.com/shade-econ/nber-workshop-2025/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20with%20blanks.html
-). Version without blanks: [Notebook](https://github.com/shade-econ/nber-workshop-2025/blob/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20no%20blanks.ipynb) [HTML](https://raw.githack.com/shade-econ/nber-workshop-2025/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20no%20blanks.html). Ludwig Straub.
+5. Tutorial 1: Intro to HANK, Ludwig Straub.
+   * Version with blanks: [Notebook](https://github.com/shade-econ/nber-workshop-2025/blob/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20with%20blanks.ipynb) [HTML](https://raw.githack.com/shade-econ/nber-workshop-2025/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20with%20blanks.html
+)
+   * Version without blanks: [Notebook](https://github.com/shade-econ/nber-workshop-2025/blob/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20no%20blanks.ipynb) [HTML](https://raw.githack.com/shade-econ/nber-workshop-2025/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20no%20blanks.html)
 
 ### Thursday, June 5
-6. Tutorial 2: SSJ approach and toolkit. [Version with blanks](https://github.com/shade-econ/nber-workshop-2025/blob/main/tutorials/Tutorial%202%20SSJ%20approach%20and%20toolkit%20with%20blanks.ipynb). [Version without blanks.](https://github.com/shade-econ/nber-workshop-2025/blob/main/tutorials/Tutorial%202%20SSJ%20approach%20and%20toolkit.ipynb). Matthew Rognlie.
+6. Tutorial 2: SSJ approach and toolkit, Matthew Rognlie.
+   * Version with blanks: [Notebook](https://github.com/shade-econ/nber-workshop-2025/blob/main/tutorials/Tutorial%202%20SSJ%20approach%20and%20toolkit%20with%20blanks.ipynb) [HTML](https://raw.githack.com/shade-econ/nber-workshop-2025/main/tutorials/Tutorial%202%20SSJ%20approach%20and%20toolkit%20with%20blanks.html)
+   * Version without blanks: [Notebook](https://github.com/shade-econ/nber-workshop-2025/blob/main/tutorials/Tutorial%202%20SSJ%20approach%20and%20toolkit.ipynb) [HTML](https://raw.githack.com/shade-econ/nber-workshop-2025/main/tutorials/Tutorial%202%20SSJ%20approach%20and%20toolkit.html)
 
-7. [Monetary Policy Topics](https://shade-econ.github.io/nber-workshop-2025/lecture5_monetary_topics.pdf), Adrien Auclert.
+8. [Monetary Policy Topics](https://shade-econ.github.io/nber-workshop-2025/lecture5_monetary_topics.pdf), Adrien Auclert.
 
-8. [Estimation](https://shade-econ.github.io/nber-workshop-2025/lecture6_estimation.pdf), Adrien Auclert and Matthew Rognlie. [Notebook](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/lecture6_estimation.ipynb)
+9. [Estimation](https://shade-econ.github.io/nber-workshop-2025/lecture6_estimation.pdf), Adrien Auclert and Matthew Rognlie. [Notebook](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/lecture6_estimation.ipynb)
 
 12. [HA Models from FRB Economists and Life-Cycle Jacobians](https://shade-econ.github.io/nber-workshop-2025/ha_frb.pdf) [Repo](https://github.com/Mv77/LC-SSJ_public?tab=readme-ov-file)
