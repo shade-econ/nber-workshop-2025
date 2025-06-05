@@ -16,10 +16,14 @@ While this repo is under construction, feel free to check out the [repo for the 
 
    * See end of notebook for hands-on implementation of fake news algorithm, which is generalized in [`sim_fake_news.py`](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/sim_fake_news.py). Also see [note from a previous class](https://mrognlie.github.io/econ411-3/econ411_3_lecture7_supplement.pdf) explaining the algorithm.
 
-5. [Intro to HANK: Monetary Policy](https://shade-econ.github.io/nber-workshop-2025/lecture4_monetary.pdf), Adrien Auclert.
+4. [Intro to HANK: Monetary Policy](https://shade-econ.github.io/nber-workshop-2025/lecture4_monetary.pdf), Adrien Auclert.
 
-6. Tutorial 1: Intro to HANK: Version with blanks: [Notebook](https://github.com/shade-econ/nber-workshop-2025/blob/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20with%20blanks.ipynb) [HTML](https://raw.githack.com/shade-econ/nber-workshop-2025/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20with%20blanks.html
+5. Tutorial 1: Intro to HANK: Version with blanks: [Notebook](https://github.com/shade-econ/nber-workshop-2025/blob/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20with%20blanks.ipynb) [HTML](https://raw.githack.com/shade-econ/nber-workshop-2025/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20with%20blanks.html
 ). Version without blanks: [Notebook](https://github.com/shade-econ/nber-workshop-2025/blob/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20no%20blanks.ipynb) [HTML](https://raw.githack.com/shade-econ/nber-workshop-2025/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20no%20blanks.html). Ludwig Straub.
 
 ### Thursday, June 5
-7. Tutorial 2: SSJ approach and toolkit. [Version with blanks](https://github.com/shade-econ/nber-workshop-2025/blob/main/tutorials/Tutorial%202%20SSJ%20approach%20and%20toolkit%20with%20blanks.ipynb). [Version without blanks.](https://github.com/shade-econ/nber-workshop-2025/blob/main/tutorials/Tutorial%202%20SSJ%20approach%20and%20toolkit.ipynb). Matthew Rognlie.
+6. Tutorial 2: SSJ approach and toolkit. [Version with blanks](https://github.com/shade-econ/nber-workshop-2025/blob/main/tutorials/Tutorial%202%20SSJ%20approach%20and%20toolkit%20with%20blanks.ipynb). [Version without blanks.](https://github.com/shade-econ/nber-workshop-2025/blob/main/tutorials/Tutorial%202%20SSJ%20approach%20and%20toolkit.ipynb). Matthew Rognlie.
+
+7. [Monetary Policy Topics](https://shade-econ.github.io/nber-workshop-2025/lecture5_monetary_topics.pdf), Adrien Auclert.
+
+8. [Estimation](https://shade-econ.github.io/nber-workshop-2025/lecture6_estimation.pdf), Adrien Auclert and Matthew Rognlie. [Notebook](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/lecture6_estimation.ipynb)
