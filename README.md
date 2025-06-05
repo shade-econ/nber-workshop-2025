@@ -20,3 +20,6 @@ While this repo is under construction, feel free to check out the [repo for the 
 
 6. Tutorial 1: Intro to HANK: Version with blanks: [Notebook](https://github.com/shade-econ/nber-workshop-2025/blob/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20with%20blanks.ipynb) [HTML](https://raw.githack.com/shade-econ/nber-workshop-2025/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20with%20blanks.html
 ). Version without blanks: [Notebook](https://github.com/shade-econ/nber-workshop-2025/blob/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20no%20blanks.ipynb) [HTML](https://raw.githack.com/shade-econ/nber-workshop-2025/main/tutorials/Tutorial%201%20Intro%20to%20HANK%20no%20blanks.html). Ludwig Straub.
+
+### Thursday, June 5
+7. Tutorial 2: SSJ approach and toolkit. [Version with blanks](https://github.com/shade-econ/nber-workshop-2025/blob/main/tutorials/Tutorial%202%20SSJ%20approach%20and%20toolkit%20with%20blanks.ipynb). [Version without blanks.](https://github.com/shade-econ/nber-workshop-2025/blob/main/tutorials/Tutorial%202%20SSJ%20approach%20and%20toolkit.ipynb). Matthew Rognlie.
