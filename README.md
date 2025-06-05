@@ -27,3 +27,5 @@ While this repo is under construction, feel free to check out the [repo for the 
 7. [Monetary Policy Topics](https://shade-econ.github.io/nber-workshop-2025/lecture5_monetary_topics.pdf), Adrien Auclert.
 
 8. [Estimation](https://shade-econ.github.io/nber-workshop-2025/lecture6_estimation.pdf), Adrien Auclert and Matthew Rognlie. [Notebook](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/lecture6_estimation.ipynb)
+
+12. [HA Models from FRB Economists and Life-Cycle Jacobians](https://shade-econ.github.io/nber-workshop-2025/ha_frb.pdf) [Repo](https://github.com/Mv77/LC-SSJ_public?tab=readme-ov-file)
