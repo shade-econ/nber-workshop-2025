@@ -40,3 +40,7 @@ While this repo is under construction, feel free to check out the [repo for the 
 
 ### Friday, June 6
 12. [HANK in Continuous Time](https://shade-econ.github.io/nber-workshop-2025/ha_ctstime.pdf), Adrien Bilal. [Repo](https://github.com/ShlokG/CT-SSJ/)
+
+14. [Second order solutions in sequence space](https://shade-econ.github.io/nber-workshop-2025/lecture10_secondorder.pdf), Adrien Auclert.
+
+15. [Endogenous portfolios and risk premia](https://shade-econ.github.io/nber-workshop-2025/lecture11_portfolios.pdf), Adrien Auclert. 
