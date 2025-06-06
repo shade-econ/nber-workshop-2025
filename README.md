@@ -39,12 +39,18 @@ While this repo is under construction, feel free to check out the [repo for the 
 12. [HA Models from FRB Economists and Life-Cycle Jacobians](https://shade-econ.github.io/nber-workshop-2025/ha_frb.pdf), Mateo Velasquez-Giraldo. [Repo](https://github.com/Mv77/LC-SSJ_public?tab=readme-ov-file)
 
 ### Friday, June 6
-12. [HANK in Continuous Time](https://shade-econ.github.io/nber-workshop-2025/ha_ctstime.pdf), Adrien Bilal. [Repo](https://github.com/ShlokG/CT-SSJ/)
+13. [HANK in Continuous Time](https://shade-econ.github.io/nber-workshop-2025/ha_ctstime.pdf), Adrien Bilal. [Repo](https://github.com/ShlokG/CT-SSJ/)
 
-13. [Smooth methods for the standard incomplete markets model](https://shade-econ.github.io/nber-workshop-2025/lecture9_smooth.pdf), Matthew Rognlie. [[notebook w/figures]](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/lecture9_smooth.ipynb)
+14. [Smooth methods for the standard incomplete markets model](https://shade-econ.github.io/nber-workshop-2025/lecture9_smooth.pdf), Matthew Rognlie. [[notebook w/figures]](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/lecture9_smooth.ipynb)
     
     * See `notebooks/smooth_sim/` for supporting code, [`smooth_sim.py`](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/smooth_sim/smooth_sim.py) inside has main code
 
 15. [Second order solutions in sequence space](https://shade-econ.github.io/nber-workshop-2025/lecture10_secondorder.pdf), Adrien Auclert.
 
 16. [Endogenous portfolios and risk premia](https://shade-econ.github.io/nber-workshop-2025/lecture11_portfolios.pdf), Adrien Auclert. 
+
+17. [Pricing models in the sequence space](https://shade-econ.github.io/nber-workshop-2025/lecture12_pricing_models.pdf), Ludwig Straub. [[notebook w/figures]](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/lecture12_pricing_models.ipynb)
+
+18. [Information frictions](https://shade-econ.github.io/nber-workshop-2025/lecture13_info_frictions.pdf), Ludwig Straub. [[notebook w/figures]](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/lecture13_info_frictions.ipynb)
+
+19. [Optimal long-run policy](https://shade-econ.github.io/nber-workshop-2025/lecture14_optimal_longrun_policy.pdf), Ludwig Straub.
