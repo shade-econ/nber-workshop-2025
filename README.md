@@ -47,7 +47,7 @@ While this repo is under construction, feel free to check out the [repo for the 
 
 15. [Second order solutions in sequence space](https://shade-econ.github.io/nber-workshop-2025/lecture10_secondorder.pdf), Adrien Auclert.
 
-16. [Endogenous portfolios and risk premia](https://shade-econ.github.io/nber-workshop-2025/lecture11_portfolios.pdf), Adrien Auclert. 
+16. [Endogenous portfolios and risk premia](https://shade-econ.github.io/nber-workshop-2025/lecture11_portfolios.pdf), Adrien Auclert. [Notebook](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/lecture11_portfolios.ipynb)
 
 17. [Pricing models in the sequence space](https://shade-econ.github.io/nber-workshop-2025/lecture12_pricing_models.pdf), Ludwig Straub. [[notebook w/figures]](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/lecture12_pricing_models.ipynb)
 
