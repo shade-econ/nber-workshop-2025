@@ -41,8 +41,10 @@ While this repo is under construction, feel free to check out the [repo for the 
 ### Friday, June 6
 12. [HANK in Continuous Time](https://shade-econ.github.io/nber-workshop-2025/ha_ctstime.pdf), Adrien Bilal. [Repo](https://github.com/ShlokG/CT-SSJ/)
 
-13. [Smooth methods for the standard incomplete markets model](https://shade-econ.github.io/nber-workshop-2025/lecture9_smooth.pdf), Matthew Rognlie.
+13. [Smooth methods for the standard incomplete markets model](https://shade-econ.github.io/nber-workshop-2025/lecture9_smooth.pdf), Matthew Rognlie. [[notebook w/figures]](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/lecture9_smooth.ipynb)
+    
+    * See `notebooks/smooth_sim/` for supporting code, [`smooth_sim.py`](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/smooth_sim/smooth_sim.py) inside has main code
 
-14. [Second order solutions in sequence space](https://shade-econ.github.io/nber-workshop-2025/lecture10_secondorder.pdf), Adrien Auclert.
+15. [Second order solutions in sequence space](https://shade-econ.github.io/nber-workshop-2025/lecture10_secondorder.pdf), Adrien Auclert.
 
-15. [Endogenous portfolios and risk premia](https://shade-econ.github.io/nber-workshop-2025/lecture11_portfolios.pdf), Adrien Auclert. 
+16. [Endogenous portfolios and risk premia](https://shade-econ.github.io/nber-workshop-2025/lecture11_portfolios.pdf), Adrien Auclert. 
