@@ -36,4 +36,6 @@ While this repo is under construction, feel free to check out the [repo for the 
 
 11. [Determinacy and Large-Scale Models](https://shade-econ.github.io/nber-workshop-2025/lecture8_determinacy.pdf), Matthew Rognlie. [[notebook w/figures]](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/lecture8_determinacy.ipynb)
 
-12. [HA Models from FRB Economists and Life-Cycle Jacobians](https://shade-econ.github.io/nber-workshop-2025/ha_frb.pdf) [Repo](https://github.com/Mv77/LC-SSJ_public?tab=readme-ov-file)
+12. [HA Models from FRB Economists and Life-Cycle Jacobians](https://shade-econ.github.io/nber-workshop-2025/ha_frb.pdf), Mateo Velasquez-Giraldo. [Repo](https://github.com/Mv77/LC-SSJ_public?tab=readme-ov-file)
+
+12. [HANK in Continuous Time](https://shade-econ.github.io/nber-workshop-2025/ha_frb.pdf), Adrien Bilal [Repo](https://github.com/ShlokG/CT-SSJ/)
