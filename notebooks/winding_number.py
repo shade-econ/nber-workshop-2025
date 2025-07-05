@@ -3,12 +3,13 @@ import matplotlib.pyplot as plt
 from numba import njit
 
 
-def winding_number(j, N=8192, plot=False, **kwargs):
-    e = sample_values(j, N)
+def winding_number(j, K=8192, plot=False, **kwargs):
+    """Convenience routine for notebook"""
+    e = sample_values_simple(j, K)
     if plot:
         plt.plot(e.real, e.imag, color='C0', **kwargs)
         # add arrows at beginning and middle to show direction
-        for i in (0, N//2):
+        for i in (0, K//2):
             rdir, idir = e.real[i + 1] - e.real[i], e.imag[i + 1] - e.imag[i]
             rdir, idir = rdir / np.hypot(rdir, idir) * 0.01, idir / np.hypot(rdir, idir) * 0.01
             plt.arrow(e.real[i]-rdir, e.imag[i]-idir, 2*rdir, 2*idir,
@@ -17,62 +18,76 @@ def winding_number(j, N=8192, plot=False, **kwargs):
     return winding_number_of_path(e.real, e.imag)
 
 
-def sample_values(j, N=8192):
-    """Evaluate Laurent polynomial j(z) (with equally many positive
-    and negative powers) counterclockwise at N evenly spaced roots of
-    unity z, wrapping back around to z=1, using FFT"""
-    assert N % 2 == 0 and len(j) % 2 == 1
-    Tau = len(j) // 2 + 1 # Tau-1 is the maximum pos or neg power in j(z)
+def sample_values_simple(j, K=8192):
+    """Evaluate Laurent polynomial j(z) (with equally many
+    positive and negative powers) counterclockwise at K evenly
+    spaced roots of unity z, wrapping back around to z=1"""
+    # j is (2*T-1,) array of Laurent coeffs (powers from -(T-1) to T-1)
+    assert (K % 2 == 0) and (len(j) % 2 == 1) and (K > len(j))
+    T = len(j) // 2 + 1
 
-    # center j(z) at N/2
-    jj = np.zeros(N)
-    jj[N//2-Tau+1:N//2+Tau] = j
+    # center j(z) at K/2, fill rest with zeros
+    jhat = np.zeros(K)
+    jhat[(K//2 - (T - 1)):(K//2 + T)] = j
 
-    # take FFT to evaluate j(z) * z^(N/2) at roots of unity (could exploit conjugate symmetry to halve work)
-    e = np.fft.fft(jj)
+    # take FFT of jhat to evaluate z^(K/2)*j(z) at clockwise roots of unity
+    x = np.fft.fft(jhat)
 
-    # divide by z^(N/2) at same roots, which is alternating 1 and -1, to get j(z)
-    alt = np.tile([1, -1], N//2)
-    e = e * alt
+    # divide by z^(K/2), which is alternating 1, -1 at roots of unity
+    alt = np.tile([1, -1], K//2)
+    x *= alt
 
     # return wrapped back to z=1, reversed to make counterclockwise
-    return np.concatenate((e, [e[0]]))[::-1]
+    return np.concatenate((x, [x[0]]))[::-1]
+
+
+def sample_values(j, K=8192):
+    """Like sample_values_simple, but evaluating det j(z) for block j,
+    also using conjugate symmetry for efficiency"""
+    # j is 2*T-1 or (2*T-1, n, n) array of Laurent polynomial coefficients
+    assert (K % 2 == 0) and (len(j) % 2 == 1) and (K > len(j))
+    T = len(j) // 2 + 1
+    if j.ndim == 3: assert j.shape[1] == j.shape[2]
+
+    # center j(z) at K/2, fill rest with zeros
+    jhat = np.zeros((K, *j.shape[1:])) if j.ndim == 3 else np.zeros(K)
+    jhat[(K//2 - (T - 1)):(K//2 + T)] = j
+
+    # take FFT to evaluate z^(K/2)*j(z) at clockwise roots of unity
+    # rfft only computes for K/2+1 roots with non-positive imag part
+    x = np.fft.rfft(jhat, axis=0)
+
+    # divide by z^(K/2), which is alternating 1, -1 at roots of unity
+    alt = np.tile([1, -1], K//2+1)[:K//2+1]
+    if j.ndim == 3:
+        x = np.linalg.det(x*alt[:, np.newaxis, np.newaxis])
+    else:
+        x *= alt
+
+    # use conjugate symmetry to fill in roots, go counterclockwise
+    return np.concatenate((x.conj(), x[:-1][::-1]))
 
 
 @njit
 def winding_number_of_path(x, y):
     """Compute winding number around origin of (x,y) coordinates that make closed path by
     counting number of counterclockwise crossings of ray from (0,0) -> (infty,0) on x axis"""
-    # ensure closed path!
-    assert x[-1] == x[0] and y[-1] == y[0]
+    assert x[-1] == x[0] and y[-1] == y[0]  # path must be closed
+    w = 0                                   # winding number
+    s = (y[0] >= 0)                         # current sign of y
 
-    winding_number = 0
+    for k in range(1, len(x)):
+        if (y[k] >= 0) != s:
+            # s changed, so moved across x-axis, possible crossing of ray
+            s = (y[k] >= 0)
 
-    # we iterate through coordinates (x[i], y[i]), where cur_sign is flag for
-    # whether current coordinate is above the x axis
-    cur_sign = (y[0] >= 0)
-    for i in range(1, len(x)):
-        if (y[i] >= 0) != cur_sign:
-            # if we're here, this means the x axis has been crossed
-            # this generally happens rarely, so efficiency no biggie
-            cur_sign = (y[i] >= 0)
-
-            # crossing of x axis implies possible crossing of ray (0,0) -> (infty,0)
-            # we will evaluate three possible cases to see if this is indeed the case
-            if x[i] > 0 and x[i - 1] > 0:
-                # case 1: both (x[i-1],y[i-1]) and (x[i],y[i]) on right half-plane, definite crossing
-                # increment winding number if counterclockwise (negative to positive y)
-                # decrement winding number if clockwise (positive to negative y)
-                winding_number += 2 * cur_sign - 1
-            elif not (x[i] <= 0 and x[i - 1] <= 0):
-                # here we've ruled out case 2: both (x[i-1],y[i-1]) and (x[i],y[i]) in left 
-                # half-plane, where there is definitely no crossing
-
-                # thus we're in ambiguous case 3, where points (x[i-1],y[i-1]) and (x[i],y[i]) in
-                # different half-planes: here we must analytically check whether we crossed
-                # x-axis to the right or the left of the origin
-                # [this step is intended to be rare]
-                cross_coord = (x[i - 1] * y[i] - x[i] * y[i - 1]) / (y[i] - y[i - 1])
-                if cross_coord > 0:
-                    winding_number += 2 * cur_sign - 1
-    return winding_number
+            if x[k] > 0 and x[k - 1] > 0:
+                # definite crossing, increment w if s increased and vice versa
+                w += 2 * s - 1
+            elif not (x[k] <= 0 and x[k - 1] <= 0):
+                # ruled out x_k, x_(k-1) <= 0, where there is no crossing
+                # ambiguous case, analytically check if segment crosses right or left of origin
+                crossed_on_right = (x[k - 1] * y[k] - x[k] * y[k - 1]) / (y[k] - y[k - 1])
+                if crossed_on_right > 0:
+                    w += 2 * s - 1
+    return w
