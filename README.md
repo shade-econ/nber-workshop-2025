@@ -38,7 +38,7 @@ Feel free to also check out the material from the [spring 2023 NBER workshop](ht
 
 9. [Open Economy](https://shade-econ.github.io/nber-workshop-2025/lecture7_open_economy.pdf), Ludwig Straub. [[notebook](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/lecture7_open_economy.ipynb)] [key paper: [open-economy HANK](https://shade-econ.github.io/ha_oe.pdf)]
 
-10. [Determinacy and Large-Scale Models](https://shade-econ.github.io/nber-workshop-2025/lecture8_determinacy.pdf), Matthew Rognlie. [[notebook](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/lecture8_determinacy.ipynb)] [reference: [determinacy note](https://shade-econ.github.io/ikc/sequence_space_determinacy.pdf)]
+10. [Determinacy and Large-Scale Models](https://shade-econ.github.io/nber-workshop-2025/lecture8_determinacy.pdf), Matthew Rognlie. [[notebook](https://github.com/shade-econ/nber-workshop-2025/blob/main/notebooks/lecture8_determinacy.ipynb)] [reference: [determinacy paper](https://shade-econ.github.io/determinacy_sequence_space.pdf)]
 
 11. [HA Models from FRB Economists and Life-Cycle Jacobians](https://shade-econ.github.io/nber-workshop-2025/ha_frb.pdf), Mateo Velasquez-Giraldo. [[repo](https://github.com/Mv77/LC-SSJ_public)]
 
